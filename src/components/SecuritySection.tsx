@@ -1,11 +1,11 @@
-import { Cctv, Eye, ShieldCheck } from "lucide-react";
+import { Cctv, Eye, Flame } from "lucide-react";
 import { SECURITY_FEATURES } from "@/lib/constants";
 
 // Map icon names to components
 const iconMap = {
     Cctv,
     Eye,
-    ShieldCheck,
+    Flame,
 };
 
 export default function SecuritySection() {

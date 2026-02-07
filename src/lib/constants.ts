@@ -54,13 +54,13 @@ export const SECURITY_FEATURES = [
     id: "monitoring",
     icon: "Eye",
     title: "24/7 Monitoring",
-    description: "Round-the-clock surveillance by trained security professionals. Never a moment unguarded.",
+    description: "Surveillance by trained professionals. Never a moment unguarded.",
   },
   {
-    id: "guards",
-    icon: "ShieldCheck",
-    title: "Physical Security",
-    description: "On-site security personnel, access control systems, and regular patrol rounds.",
+    id: "fire-safety",
+    icon: "Flame",
+    title: "Fire Safety Systems",
+    description: "Advanced fire suppression systems to protect your valuable assets.",
   },
 ];
 
@@ -72,6 +72,6 @@ export const NAV_LINKS = [
 
 export const SEO = {
   title: `StoreMySammaan - Storage & Safe Warehouse Space in ${CONTACT.city}`,
-  description: `Secure storage solutions in ${CONTACT.city}. 24/7 CCTV monitoring, physical security guards, and massive self-owned warehousing space for household, commercial, vehicle, and bulk storage.`,
+  description: `Secure storage solutions in ${CONTACT.city}. 24/7 CCTV monitoring, advanced fire safety systems, and massive self-owned warehousing space for household, commercial, vehicle, and bulk storage.`,
   keywords: "industrial storage, warehouse space, safe storage, CCTV security, 24/7 monitoring, warehouse storage",
 };

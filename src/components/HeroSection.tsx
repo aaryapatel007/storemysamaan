@@ -4,7 +4,7 @@ import { COMPANY, CONTACT } from "@/lib/constants";
 export default function HeroSection() {
     return (
         <section
-            className="relative min-h-screen flex items-center justify-center pt-16 md:pt-20 overflow-hidden bg-white"
+            className="relative min-h-screen flex items-center justify-center pt-24 md:pt-40 overflow-hidden bg-white"
             aria-labelledby="hero-heading"
         >
             {/* Background Style */}
