@@ -46,7 +46,7 @@ export default function HeroSection() {
                 </h1>
 
                 {/* Tagline */}
-                <p className="text-xl sm:text-2xl md:text-3xl text-slate-700 font-bold mb-4 max-w-4xl mx-auto">
+                <p className="text-xl sm:text-2xl md:text-3xl text-slate-700 font-bold mb-4 max-w-5xl lg:max-w-none mx-auto lg:whitespace-nowrap">
                     {COMPANY.tagline}
                 </p>
 
