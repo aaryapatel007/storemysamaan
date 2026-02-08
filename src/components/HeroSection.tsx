@@ -1,4 +1,5 @@
 import { ArrowRight, Phone } from "lucide-react";
+import Image from "next/image";
 import { COMPANY, CONTACT } from "@/lib/constants";
 
 export default function HeroSection() {
@@ -12,11 +13,20 @@ export default function HeroSection() {
                 className="absolute inset-0 bg-gradient-to-br from-industrial-white via-industrial-gray-50 to-industrial-white"
                 aria-hidden="true"
             >
+                {/* LCP Optimized Background Image */}
+                <div className="absolute inset-0 opacity-10">
+                    <Image
+                        src="/hero-bg.svg"
+                        alt="StoreMySammaan Warehouse Interior"
+                        fill
+                        priority
+                        className="object-cover object-center"
+                        sizes="100vw"
+                    />
+                </div>
+
                 {/* Subtler industrial texture overlay */}
                 <div className="absolute inset-0 industrial-stripes opacity-30" />
-
-                {/* Placeholder for background image with lighter overlay */}
-                <div className="absolute inset-0 bg-[url('/placeholder-industrial-bg.jpg')] bg-cover bg-center opacity-5" />
 
                 {/* Gradient for text readability on light background */}
                 <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-white/50" />
