@@ -11,7 +11,7 @@ export const CONTACT = {
   phone: "+91 93542 97030",
   whatsapp: "919810013028", // WhatsApp number without + or spaces
   whatsappDisplay: "+91 98100 13028", // Formatted for display
-  email: "aaryainterio@gmail.com",
+  email: "storemysammaan@gmail.com",
   address: "G-25, Site B, UPSIDC Industrial Area, Surajpur, Greater Noida, Uttar Pradesh 201306",
   city: "Greater Noida",
   // Google Maps embed URL for the storage location

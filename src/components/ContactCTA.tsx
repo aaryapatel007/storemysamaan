@@ -1,7 +1,17 @@
-import { Phone, MessageCircle, MapPin, Clock } from "lucide-react";
+"use client";
+
+import { useState } from "react";
+import { Phone, MessageCircle, MapPin, Copy, Check } from "lucide-react";
 import { CONTACT, COMPANY } from "@/lib/constants";
 
 export default function ContactCTA() {
+    const [copied, setCopied] = useState(false);
+
+    const copyEmail = () => {
+        navigator.clipboard.writeText(CONTACT.email);
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000);
+    };
     return (
         <section
             id="contact"
@@ -88,6 +98,29 @@ export default function ContactCTA() {
                                     <MessageCircle className="w-4 h-4 text-green-600" aria-hidden="true" />
                                     {CONTACT.whatsappDisplay}
                                 </a>
+                                <div className="flex items-center justify-center gap-2">
+                                    <a
+                                        href={`mailto:${CONTACT.email}`}
+                                        className="flex items-center gap-2 text-slate-600 hover:text-industrial-orange transition-colors font-medium"
+                                    >
+                                        <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                        </svg>
+                                        {CONTACT.email}
+                                    </a>
+                                    <button
+                                        onClick={copyEmail}
+                                        className="p-1 rounded hover:bg-slate-100 transition-colors"
+                                        aria-label="Copy email to clipboard"
+                                        title={copied ? "Copied!" : "Copy email"}
+                                    >
+                                        {copied ? (
+                                            <Check className="w-4 h-4 text-green-600" aria-hidden="true" />
+                                        ) : (
+                                            <Copy className="w-4 h-4 text-slate-400 hover:text-industrial-orange" aria-hidden="true" />
+                                        )}
+                                    </button>
+                                </div>
                             </div>
                         </div>
 
