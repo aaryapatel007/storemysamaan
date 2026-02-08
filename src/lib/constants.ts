@@ -3,8 +3,8 @@
 
 export const COMPANY = {
   name: "StoreMySammaan",
-  tagline: "Massive Self-owned Warehousing Space. Maximum Security.",
-  description: "Secure storage solutions with 24/7 CCTV monitoring and massive self-owned warehousing space for all your storage needs.",
+  tagline: "Massive Self-owned Storage Space. Maximum Security.",
+  description: "Secure storage solutions with 24/7 CCTV monitoring and massive self-owned storage space for all your storage needs.",
 };
 
 export const CONTACT = {
@@ -14,6 +14,9 @@ export const CONTACT = {
   email: "aaryainterio@gmail.com",
   address: "G-25, Site B, UPSIDC Industrial Area, Surajpur, Greater Noida, Uttar Pradesh 201306",
   city: "Greater Noida",
+  // Google Maps embed URL for the storage location
+  googleMapsEmbed: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1753.048019691701!2d77.4969752!3d28.5067581!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cebf65c13c603%3A0x9fdc8cd4a70ad008!2sAarya%20International!5e0!3m2!1sen!2sin!4v1770524245679!5m2!1sen!2sin",
+  googleMapsLink: "https://www.google.com/maps/place/Aarya+International/@28.506485,77.498033,16z/data=!4m6!3m5!1s0x390cebf65c13c603:0x9fdc8cd4a70ad008!8m2!3d28.5064846!4d77.4980332!16s%2Fg%2F11j3sdq484?hl=en&entry=ttu&g_ep=EgoyMDI2MDIwNC4wIKXMDSoASAFQAw%3D%3D",
 };
 
 export const SERVICES = [
@@ -27,7 +30,7 @@ export const SERVICES = [
     id: "commercial",
     icon: "Building2",
     title: "Commercial Storage",
-    description: "Flexible warehouse solutions for business inventory, equipment, and seasonal stock.",
+    description: "Flexible storage solutions for business inventory, equipment, and seasonal stock.",
   },
   {
     id: "vehicle",
@@ -72,6 +75,6 @@ export const NAV_LINKS = [
 
 export const SEO = {
   title: `StoreMySammaan - Storage & Safe Warehouse Space in ${CONTACT.city}`,
-  description: `Secure storage solutions in ${CONTACT.city}. 24/7 CCTV monitoring, advanced fire safety systems, and massive self-owned warehousing space for household, commercial, vehicle, and bulk storage.`,
-  keywords: "industrial storage, warehouse space, safe storage, CCTV security, 24/7 monitoring, warehouse storage",
+  description: `Secure storage solutions in ${CONTACT.city}. 24/7 CCTV monitoring, advanced fire safety systems, and massive self-owned storage space for household, commercial, vehicle, and bulk storage.`,
+  keywords: "industrial storage, household storage, commercial storage, vehicle storage, bulk storage, warehouse space, safe storage, CCTV security, 24/7 monitoring, storage solutions",
 };

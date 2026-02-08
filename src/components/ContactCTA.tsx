@@ -91,15 +91,38 @@ export default function ContactCTA() {
                             </div>
                         </div>
 
-                        {/* Location */}
+                        {/* Location with Google Maps */}
                         <div className="bg-white border border-slate-100 rounded-xl p-6 text-center shadow-sm card-hover">
                             <div className="w-12 h-12 rounded-full bg-industrial-orange/5 flex items-center justify-center mx-auto mb-4">
                                 <MapPin className="w-6 h-6 text-industrial-orange" aria-hidden="true" />
                             </div>
                             <h3 className="text-slate-900 font-bold mb-2">Visit Us</h3>
-                            <address className="text-slate-600 not-italic text-sm font-medium">
+                            <address className="text-slate-600 not-italic text-sm font-medium mb-4">
                                 {CONTACT.address}
                             </address>
+                            {/* Google Maps Embed */}
+                            <div className="rounded-lg overflow-hidden border border-slate-200">
+                                <iframe
+                                    src={CONTACT.googleMapsEmbed}
+                                    width="100%"
+                                    height="150"
+                                    style={{ border: 0 }}
+                                    allowFullScreen
+                                    loading="lazy"
+                                    referrerPolicy="no-referrer-when-downgrade"
+                                    title="StoreMySammaan Location"
+                                    className="w-full"
+                                ></iframe>
+                            </div>
+                            <a
+                                href={CONTACT.googleMapsLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-2 mt-3 text-sm text-industrial-orange hover:text-industrial-orange-light font-medium transition-colors"
+                            >
+                                <MapPin className="w-4 h-4" aria-hidden="true" />
+                                Open in Google Maps
+                            </a>
                         </div>
                     </div>
 
