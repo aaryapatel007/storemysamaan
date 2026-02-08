@@ -57,6 +57,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://storemysammaan.in",
   },
+  verification: {
+    google: "IdXQFLQtgUkwEbB4fApGt6Os1Tab0d3kprz6DtY0-T0",
+  },
 };
 
 export default function RootLayout({
