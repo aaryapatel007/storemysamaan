@@ -74,7 +74,41 @@ export const NAV_LINKS = [
 ];
 
 export const SEO = {
-  title: `StoreMySammaan - Storage & Safe Warehouse Space in ${CONTACT.city}`,
-  description: `Secure storage solutions in ${CONTACT.city}. 24/7 CCTV monitoring, advanced fire safety systems, and massive self-owned storage space for household, commercial, vehicle, and bulk storage.`,
-  keywords: "industrial storage, household storage, commercial storage, vehicle storage, bulk storage, warehouse space, safe storage, CCTV security, 24/7 monitoring, storage solutions",
+  title: "StoreMySammaan | Reliable Storage Space in Greater Noida",
+  description: "Looking for a safe storage space in Greater Noida (Delhi NCR)? StoreMySamaan offers massive, secure storage solutions for personal and business use. Our facility in Surajpur (UPSIDC Site B) is equipped for 1) Household Storage (furniture, luggage during moves), 2) Commercial Storage (inventory, documents), 3) Vehicle Storage (cars, bikes, etc), and 4) Bulk Industrial Storage. We are a self-owned facility, meaning better accountability and strictly controlled access. Features include 24/7 camera surveillance, pest control, and dedicated key account managers. We provide flexible short-term and long-term storage rental plans. Contact us today for your requirements. Call +91 93542 97030.",
+  keywords: "storage space greater noida, commercial storage greater noida, household storage solutions greater noida, industrial storage solutions greater noida, storage solutions greater noida, storage units greater noida, bike storage space greater noida, self storage facility greater noida",
+  ogImage: "/og-image.jpg",
+};
+
+// JSON-LD Structured Data for SelfStorage LocalBusiness
+export const JSONLD_DATA = {
+  "@context": "https://schema.org",
+  "@type": "SelfStorage",
+  "name": "StoreMySammaan",
+  "image": "/og-image.jpg",
+  "url": "https://storemysammaan.in",
+  "telephone": "+91-9354297030",
+  "priceRange": "₹₹",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "G-25, Site B, UPSIDC Industrial Area",
+    "addressLocality": "Surajpur, Greater Noida",
+    "addressRegion": "Uttar Pradesh",
+    "postalCode": "201306",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "28.506485",
+    "longitude": "77.498033"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    "opens": "09:00",
+    "closes": "19:00"
+  },
+  "sameAs": [
+    "https://wa.me/919810013028"
+  ]
 };

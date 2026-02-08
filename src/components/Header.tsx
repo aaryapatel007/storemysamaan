@@ -24,7 +24,7 @@ export default function Header() {
                         <div className="relative w-20 h-20 md:w-32 md:h-32 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
                             <img
                                 src="/logo.png"
-                                alt={`${COMPANY.name} Logo`}
+                                alt="StoreMySammaan - Secure warehouse storage facility in Greater Noida"
                                 className="w-full h-full object-contain"
                             />
                         </div>

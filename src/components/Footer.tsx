@@ -21,7 +21,7 @@ export default function Footer() {
                             <div className="relative w-24 h-24 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
                                 <img
                                     src="/logo.png"
-                                    alt={`${COMPANY.name} Logo`}
+                                    alt="StoreMySammaan - Self storage facility in Surajpur, Greater Noida"
                                     className="w-full h-full object-contain"
                                 />
                             </div>

@@ -1,0 +1,8 @@
+# Robots.txt for StoreMySammaan
+# Allow all crawlers to index the entire site
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://storemysammaan.in/sitemap.xml
