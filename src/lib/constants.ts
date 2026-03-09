@@ -3,7 +3,7 @@
 
 export const COMPANY = {
   name: "StoreMySammaan",
-  tagline: "Massive Self-owned Storage Space in Greater Noida (Delhi NCR). Maximum Security.",
+  tagline: "Self-owned Storage Space in Greater Noida (Delhi NCR). 24/7 Security Assurance.",
   description: "Secure storage solutions with 24/7 CCTV monitoring and massive self-owned storage space for all your storage needs.",
 };
 
